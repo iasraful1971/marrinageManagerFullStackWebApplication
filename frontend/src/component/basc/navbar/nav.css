@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: rgba(71, 85, 105, 0.1);
+  background-color: rgba(248, 250, 252, 0.6);
+  padding: 10px 80px;
+}
+.menu {
+  display: none;
+}
+.navbar .links ul {
+  list-style-type: none;
+  display: flex;
+}
+.navbar .links ul li {
+  transition: all 0.4s;
+}
+
+.navbar .links ul li {
+  padding: 0px 5px;
+}
+.navbar .links ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  font-weight: 400;
+  color: rgb(32, 32, 32);
+
+  border-radius: 4px;
+}
+.navbar .links ul li a:hover {
+  background-color: black;
+  color: aliceblue;
+}
+.navbar .links ul li a:active {
+  background-color: black;
+  color: aliceblue;
+}
+
+.menu-close {
+  transform: translateX(-50%);
+}
+.menu-close ul {
+  display: none;
+}
+.mobile-menu {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 60%;
+  background-color: rgb(79, 139, 243);
+  height: 100vh;
+
+  transform: translateX(0%);
+  border-radius: 0 10px 0 0;
+  z-index: 999;
+}
+.mobile-menu ul {
+  list-style: none;
+}
+.mobile-menu ul li {
+  padding: 15px 0;
+}
+.mobile-menu ul li a {
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(250, 240, 240);
+  font-size: 13px !important;
+}
+.menu-icon {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .links {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+}

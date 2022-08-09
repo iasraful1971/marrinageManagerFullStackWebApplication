@@ -1,0 +1,149 @@
+.me .card {
+  border-radius: 5px;
+  padding: 0 0 20px;
+  transition: all 0.292s ease 0s;
+  margin-top: 30px;
+  border: 1px solid rgba(108, 0, 146, 0.2);
+}
+.me .card .image-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #522b79;
+  padding: 20px 0;
+}
+.me .card .image-area img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.me .card .image-area .head {
+  text-align: center;
+}
+.me .card .image-area .head h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 20px;
+}
+.me .card:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 19%);
+  transform: scale(1.01);
+}
+
+.me .info {
+  margin: 30px;
+}
+.me .info .one-box {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.me .info label {
+  max-width: 50%;
+  flex: 0 0 50%;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #522b79;
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+}
+.me .info p {
+  max-width: 50%;
+  flex: 0 0 50%;
+  margin: 0;
+  text-align: center;
+  padding: 5px 0;
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+  border-color: #522b79;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.me .copy-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me .whole-details {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: block;
+  border: 1px solid #dedede;
+  border-top: 2px solid #522b79;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 2%);
+  list-style: none;
+}
+
+.me .whole-details h5 {
+  padding: 15px 10px;
+  margin: 0 0;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #522b79;
+}
+.me .details-table-show {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 20px;
+}
+.me .details-table-show .details-text {
+  background: #f8f8f8;
+  border-right: 1px solid #f0f0f0;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  width: 100%;
+}
+.me .details-table-show .details-dynamic {
+  background: #f8f8f8;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.me .edit-and-delete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.me .edit-and-delete .edit-btn {
+  margin-right: 10px;
+}
+.notification-grid {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .me .edit-and-delete {
+    justify-content: center;
+  }
+}
+.notification-grid .notification-grid-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+}
+.notification-grid .notification-grid-text .btn-area {
+  margin-top: 20px;
+}
+.notification-grid .notification-grid-text h5 {
+  font-size: 16px;
+  font-weight: 400;
+}

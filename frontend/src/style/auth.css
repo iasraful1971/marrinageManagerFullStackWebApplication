@@ -1,0 +1,16 @@
+.tab {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tab {
+    width: 100%;
+  }
+}
+.register-form {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 0px 20px 30px 20px;
+  border-radius: 10px;
+}

@@ -1,0 +1,70 @@
+.hero-bg-image-1 {
+  background-image: url("../../image/bg1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-bg-image-2 {
+  background-image: url("../../image/bg2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-bg-image-3 {
+  background-image: url("../../image/bg3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-bg-image-4 {
+  background-image: url("../../image/bg4.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero-bg-image-5 {
+  background-image: url("../../image/bg5.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.faq-hover-bg {
+  transition: all 0.4s;
+}
+.faq-hover-bg:hover {
+  background-color: #6d28d9;
+  color: #fff;
+}
+.faq-hover-bg:active {
+  background-color: #6d28d9;
+  color: #fff;
+}
+
+.faq .faq-image {
+  width: 120px;
+}
+.faq h1 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 35px;
+}
+.faq .purple {
+  color: #6d28d9;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-image-2 {
+    width: 50%;
+  }
+}
