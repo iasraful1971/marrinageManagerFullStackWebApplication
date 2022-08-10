@@ -45,19 +45,21 @@ export function Register() {
 
    useEffect(() => {
     if(authenticate){
-      window.location.href="/"
       history.push("/");
     }
     if( userInfo){
-      window.location.href="/"
       history.push("/");
     }
    
+    if(successMessage){
+      toast.error(successMessage?.successMessage)
+      dispatch({type :"ERROR_CLEAR"})
+    }
     if(errorMessage){
       toast.error(errorMessage)
       dispatch({type :"ERROR_CLEAR"})
     }
-  }, [successMessage , errorMessage , authenticate ,  userInfo])
+  }, [successMessage ,successMessage?.successMessage , errorMessage , authenticate ,  userInfo])
 
   return (
     <>

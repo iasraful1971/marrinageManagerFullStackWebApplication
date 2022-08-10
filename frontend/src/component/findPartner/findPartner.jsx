@@ -143,14 +143,12 @@ const FindPartner = () => {
                 }
             </div>
             <div className="pagination-area">
-             {
-              allSchedule.length === 8 ?  <Pagination
+            <Pagination
               pageNumber={currentPage ? currentPage.split("-")[1] : 1}
               perPage={perPage}
               itemCount={scheduleCounts}
               path="/find-partner"
-            />:  ""
-             }
+            />
             </div>
            
           </div>

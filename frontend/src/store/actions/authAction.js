@@ -6,15 +6,12 @@ export const user_register = (data) => async (dispatch) => {
   dispatch({
     type: "LOADER_RUN",
   });
-
-
   try {
     const response = await axios.post(
       "/rest-api/register",
-      data,
-     
+      data,   
     );
-    console.log( response.data)
+   
     localStorage.setItem("auth_token", response.data.token);
     dispatch({ type: "USER_REGISTER_SUCCESS", payload: response.data });
     
