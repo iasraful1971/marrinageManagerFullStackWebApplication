@@ -10,7 +10,7 @@ export const user_register = (data) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:8080/rest-api/register",
+      "/rest-api/register",
       data,
      
     );
@@ -40,7 +40,7 @@ export const user_login= (data) => async (dispatch) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:8080/rest-api/login",
+      "/rest-api/login",
       data,
      
     );

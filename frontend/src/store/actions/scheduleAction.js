@@ -7,7 +7,7 @@ export const add_schedule = (data) => async (dispatch) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/rest-api/add-schedule",
+        "/rest-api/add-schedule",
         data,
        
       );
@@ -26,7 +26,7 @@ export const add_schedule = (data) => async (dispatch) => {
    
      try {
        const response = await axios.get(
-         `http://localhost:8080/rest-api/get-schedules?page=${page}`,
+         `/rest-api/get-schedules?page=${page}`,
        );
        dispatch({
         type: "SCHEDULE_GET_SUCCESS",
@@ -48,7 +48,7 @@ export const add_schedule = (data) => async (dispatch) => {
 
      try {
        const response = await axios.get(
-         `http://localhost:8080/rest-api/get-single-schedule-by-user/${email}`,
+         `/rest-api/get-single-schedule-by-user/${email}`,
        );
       
       dispatch({
@@ -68,7 +68,7 @@ export const add_schedule = (data) => async (dispatch) => {
    
      try {
        const response = await axios.get(
-         `http://localhost:8080/rest-api/get-single-schedule/${id}`,
+         `/rest-api/get-single-schedule/${id}`,
        );
       dispatch({
         type: "SINGLE_BIO_DATA_GET_SUCCESS",
@@ -86,7 +86,7 @@ export const add_schedule = (data) => async (dispatch) => {
  
      try {
        const response = await axios.delete(
-         `http://localhost:8080/rest-api/schedule-delete/${id}`,
+         `/rest-api/schedule-delete/${id}`,
        );
       dispatch({
         type: "DELETE_SUCCESS",
@@ -108,7 +108,7 @@ export const add_schedule = (data) => async (dispatch) => {
    
       try {
         const response = await axios.get(
-          `http://localhost:8080/rest-api/schedule-edit/${id}`,
+          `/rest-api/schedule-edit/${id}`,
         );
         dispatch({
           type: "EDIT_SCHEDULE_GET_SUCCESS",
@@ -131,7 +131,7 @@ export const add_schedule = (data) => async (dispatch) => {
    
     try {
       const response = await axios.patch(
-        `http://localhost:8080/rest-api/schedule-update/${id}`,
+        `/rest-api/schedule-update/${id}`,
         data,
         
       );
