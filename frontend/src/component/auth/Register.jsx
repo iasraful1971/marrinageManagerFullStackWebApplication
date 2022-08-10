@@ -5,11 +5,12 @@ import { showNotification } from "@mantine/notifications";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { user_register } from "../../store/actions/authAction";
 
 export function Register() {
 
-
+  let history = useHistory();
   const dispatch = useDispatch();
   const { authenticate, userInfo, errorMessage, successMessage, loader } =
     useSelector((state) => state.userReducer);
@@ -45,9 +46,11 @@ export function Register() {
    useEffect(() => {
     if(authenticate){
       window.location.href="/"
+      history.push("/");
     }
     if( userInfo){
       window.location.href="/"
+      history.push("/");
     }
    
     if(errorMessage){
