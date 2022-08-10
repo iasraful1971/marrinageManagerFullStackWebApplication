@@ -5,16 +5,15 @@ import { showNotification } from "@mantine/notifications";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
 import { user_register } from "../../store/actions/authAction";
 
 export function Register() {
-  let history = useHistory();
+
 
   const dispatch = useDispatch();
   const { authenticate, userInfo, errorMessage, successMessage, loader } =
     useSelector((state) => state.userReducer);
-    console.log(authenticate , userInfo , errorMessage , successMessage , loader);
+
   const form = useForm({
     initialValues: { name: "", email: "", password: "", confirmPassword: "" },
     validate: {
@@ -45,14 +44,17 @@ export function Register() {
 
    useEffect(() => {
     if(authenticate){
-      history.push("/");
+      window.location.href="/"
+    }
+    if( userInfo){
+      window.location.href="/"
     }
    
     if(errorMessage){
       toast.error(errorMessage)
       dispatch({type :"ERROR_CLEAR"})
     }
-  }, [successMessage , errorMessage , authenticate])
+  }, [successMessage , errorMessage , authenticate ,  userInfo])
 
   return (
     <>
