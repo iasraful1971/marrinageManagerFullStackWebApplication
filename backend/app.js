@@ -3,13 +3,14 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
-
+const cookieParser = require("cookie-parser");
 
 
 //use middleware
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 
 //config 

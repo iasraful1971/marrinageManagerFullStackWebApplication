@@ -2,8 +2,6 @@ const UserModel = require("../models/authModel.js");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-//  
-
 
 //register
 module.exports.register = async (req, res) => {

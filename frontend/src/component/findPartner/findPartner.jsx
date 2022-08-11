@@ -159,3 +159,6 @@ const FindPartner = () => {
 };
 
 export default FindPartner;
+
+
+// It is a MERN stack marriage manager web application with some features. Here  registered guy can add his/her biograpghycal data or personal infornmation. And Anyone can see the biodataa with filtering and pagination by page. 
